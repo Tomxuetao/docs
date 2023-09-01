@@ -1,29 +1,16 @@
 {
   "type": "module",
   "scripts": {
-    "prepare": "husky install",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "commit": "git add . && git-cz",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "vitepress": "1.0.0-rc.10"
   },
-  "devDependencies": {
-    "husky": "^8.0.3",
-    "cz-customizable": "^7.0.0",
-    "conventional-changelog-cli": "^2.2.2",
-    "cz-conventional-changelog": "^3.3.0"
-  },
   "engines": {
     "node": ">=14.0.0"
   },
-  "license": "MIT",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  }
+  "license": "MIT"
 }
