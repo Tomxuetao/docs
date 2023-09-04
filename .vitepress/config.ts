@@ -5,7 +5,6 @@ export default defineConfig({
   lang: 'zh-CN',
   cleanUrls: true,
   srcDir: './src',
-  outDir: './dist',
   lastUpdated: true,
   title: "Tomxuetao",
   assetsDir: './src/assets',
