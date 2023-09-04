@@ -41,15 +41,15 @@ export default defineConfig({
         {
           text: 'Kubeadm',
           items: [
-            { text: '简介', link: '/k8s/index' },
+            { text: 'Kubeadm', link: '/k8s/index' },
             { text: '快速上手', link: '/k8s/quick-start' }
           ]
         },
         {
           text: 'KubeKey',
           items: [
-            { text: '简介', link: '/k8s/kubekey' },
-            { text: '快速上手', link: '/k8s/quick-start' }
+            { text: 'KubeKey', link: '/k8s/kubekey' },
+            { text: '多节点安装', link: '/k8s/multi-node' }
           ]
         }
       ]
