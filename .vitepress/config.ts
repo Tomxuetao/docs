@@ -1,55 +1,55 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/docs/',
+  base: '/',
   lang: 'zh-CN',
   cleanUrls: true,
   srcDir: './src',
   outDir: './dist',
+  assetsDir: 'assets',
   lastUpdated: true,
   title: "Tomxuetao",
-  assetsDir: './src/assets',
-  head: [['link', { rel: 'icon', href: '/assets/favicon.webp' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.webp' }]],
   description: "前端文档|JavaScript|WebGIS|地图|K8s",
   themeConfig: {
-    logo: '/assets/favicon.webp',
+    logo: '/favicon.webp',
     nav: [
       {
         text: '前端基础',
-        link: '/front'
+        link: '/views/front'
       },
       {
         text: 'Vue相关',
-        link: '/vue'
+        link: '/views/vue'
       },
       {
         text: 'WebGIS',
-        link: '/gis'
+        link: '/views/gis'
       },
       {
         text: '请求工具',
-        link: '/axios'
+        link: '/views/axios'
       },
       {
-        text: 'K8s',
-        link: '/k8s/',
-        activeMatch: `^/k8s/`,
+        text: 'Kubernetes',
+        link: '/views/k8s/kubekey',
+        activeMatch: `^/views/k8s/`,
       }
     ],
     sidebar: {
-      '/k8s/': [
-        {
-          text: 'Kubeadm',
-          items: [
-            { text: 'Kubeadm', link: '/k8s/index' },
-            { text: '快速上手', link: '/k8s/quick-start' }
-          ]
-        },
+      '/views/k8s/': [
         {
           text: 'KubeKey',
           items: [
-            { text: 'KubeKey', link: '/k8s/kubekey' },
-            { text: '多节点安装', link: '/k8s/multi-node' }
+            { text: '简介', link: '/views/k8s/kubekey' },
+            { text: '多节点安装', link: '/views/k8s/multi-node' }
+          ]
+        },
+        {
+          text: 'Kubeadm',
+          items: [
+            { text: '简介', link: '/views/k8s//index' },
+            { text: '快速上手', link: '/views/k8s//quick-start' }
           ]
         }
       ]
