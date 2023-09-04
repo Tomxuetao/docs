@@ -31,7 +31,7 @@ export default defineConfig({
         link: '/views/axios'
       },
       {
-        text: 'Kubernetes',
+        text: 'K8s搭建',
         link: '/views/k8s/kubekey',
         activeMatch: `^/views/k8s/`,
       }
@@ -41,14 +41,16 @@ export default defineConfig({
         {
           text: 'KubeKey',
           items: [
-            { text: '简介', link: '/views/k8s/kubekey' },
-            { text: '多节点安装', link: '/views/k8s/multi-node' }
+            { text: 'KubeKey简介', link: '/views/k8s/kubekey' },
+            { text: '多节点安装', link: '/views/k8s/multi-node' },
+            { text: '配置加速器', link: '/views/k8s/booster' },
+            { text: 'K8s集群配置', link: '/views/k8s/cluster-config' },
           ]
         },
         {
           text: 'Kubeadm',
           items: [
-            { text: '简介', link: '/views/k8s//index' },
+            { text: 'Kubeadm简介', link: '/views/k8s//index' },
             { text: '快速上手', link: '/views/k8s//quick-start' }
           ]
         }
