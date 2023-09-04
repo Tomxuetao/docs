@@ -6,7 +6,7 @@
 
 # Thumbnails
 ._*
-
+.idea
 # Logs
 logs
 *.log
