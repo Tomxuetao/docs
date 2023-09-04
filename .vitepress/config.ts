@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/docs',
+  base: '/docs/',
   lang: 'zh-CN',
   cleanUrls: true,
   srcDir: './src',
+  outDir: './dist',
   lastUpdated: true,
   title: "Tomxuetao",
   assetsDir: './src/assets',
