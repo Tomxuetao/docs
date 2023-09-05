@@ -53,19 +53,29 @@ export default defineConfig({
     sidebar: {
       '/views/k8s/': [
         {
-          text: 'KubeKey',
+          text: '操作系统',
+          base: '/views/k8s',
           items: [
-            { text: 'KubeKey简介', link: '/views/k8s/kubekey' },
-            { text: '多节点安装', link: '/views/k8s/multi-node' },
-            { text: '配置加速器', link: '/views/k8s/booster' },
-            { text: 'K8s集群配置', link: '/views/k8s/cluster-config' },
+            { text: '基础配置', link: '/base-config' },
+            { text: '可选配置', link: '/optional-config' }
+          ]
+        },
+        {
+          text: 'KubeKey',
+          base: '/views/k8s',
+          items: [
+            { text: 'KubeKey简介', link: '/kubekey' },
+            { text: '多节点安装', link: '/multi-node' },
+            { text: '配置加速器', link: '/booster' },
+            { text: 'K8s集群配置', link: '/cluster-config' },
           ]
         },
         {
           text: 'Kubeadm',
+          base: '/views/k8s',
           items: [
-            { text: 'Kubeadm简介', link: '/views/k8s//index' },
-            { text: '快速上手', link: '/views/k8s/quick-start' }
+            { text: 'Kubeadm简介', link: '/index' },
+            { text: '快速上手', link: '/quick-start' }
           ]
         }
       ],
