@@ -8,7 +8,7 @@ outline: deep
 
 ## CommonJS 用法
 
-为了在CommonJS中使用 require（） 导入时获得TypeScript类型推断（智能感知/自动完成），请使用以下方法：
+为了在CommonJS中使用 `require()` 导入时获得TypeScript类型推断（智能感知/自动完成），请使用以下方法：
 
 ```javascript
 const axios = require('axios').default;
@@ -18,7 +18,7 @@ const axios = require('axios').default;
 
 ## 用例
 
-发起一个 GET 请求
+发起一个 `GET` 请求
 
 ```javascript
 const axios = require('axios');
@@ -64,4 +64,4 @@ async function getUser() {
 }
 ```
 
-注意: 由于async/await 是ECMAScript 2017中的一部分，而且在IE和一些旧的浏览器中不支持，所以使用时务必要小心。
+注意: 由于`async/await` 是ECMAScript 2017中的一部分，而且在IE和一些旧的浏览器中不支持，所以使用时务必要小心。

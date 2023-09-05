@@ -4,7 +4,7 @@ outline: deep
 
 # POST 请求
 
-用Axios如何发起POST请求
+用Axios如何发起 `POST` 请求
 
 ## 发起一个 POST 请求
 
@@ -54,7 +54,7 @@ const { data } = await axios.post('/user', document.querySelector('#my-form'), {
 
 ## Forms
 
-### Multipart (multipart/form-data)
+### Multipart (`multipart/form-data`)
 
 ```javascript
 const { data } = await axios.post('https://httpbin.org/post', {
@@ -70,7 +70,7 @@ const { data } = await axios.post('https://httpbin.org/post', {
 )
 ```
 
-### URL encoded form (application/x-www-form-urlencoded)
+### URL encoded form (`application/x-www-form-urlencoded`)
 
 ```javascript
 const { data } = await axios.post('https://httpbin.org/post', {

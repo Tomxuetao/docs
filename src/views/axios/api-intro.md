@@ -6,7 +6,7 @@ outline: deep
 
 ## Axios API参考
 
-可以向 axios 传递相关配置来创建请求
+可以向 `axios` 传递相关配置来创建请求
 
 axios(config)
 
@@ -70,5 +70,5 @@ axios.putForm(url[, data[, config]])
 axios.patchForm(url[, data[, config]])
 
 ::: tip 注意
-在使用别名方法时， url、method、data 这些属性都不必在配置中指定。
+在使用别名方法时， `url`、`method`、`data` 这些属性都不必在配置中指定。
 :::

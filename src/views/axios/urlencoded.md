@@ -22,7 +22,7 @@ axios.post('/foo', params)
 ，但是可以使用[polyfill](https://github.com/WebReflection/url-search-params) (确保 polyfill 全局环境)
 :::
 
-或者, 您可以使用qs 库编码数据:
+或者, 您可以使用 [`qs`](https://github.com/ljharb/qs) 库编码数据:
 
 ```javascript
 const qs = require('qs')

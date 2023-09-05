@@ -8,9 +8,9 @@ outline: deep
 
 ## Axios 是什么?
 
-Axios 是一个基于 [promise](https://zh.javascript.info/promise-basics) 网络请求库，作用于 [node.js](https://nodejs.org/en)
+Axios 是一个基于 [`promise`](https://zh.javascript.info/promise-basics) 网络请求库，作用于 [`node.js`](https://nodejs.org/en)
 和浏览器中。 它是 [isomorphic](https://www.lullabot.com/articles/what-is-an-isomorphic-application) 的(
-即同一套代码可以运行在浏览器和node.js中)。在服务端它使用原生 node.js http 模块, 而在客户端 (浏览端) 则使用
+即同一套代码可以运行在浏览器和node.js中)。在服务端它使用原生 node.js `http` 模块, 而在客户端 (浏览端) 则使用
 XMLHttpRequests。
 
 ## 特性
@@ -24,9 +24,9 @@ XMLHttpRequests。
 - 超时处理
 - 查询参数序列化支持嵌套项处理
 - 自动将请求体序列化为：
-    - JSON (application/json)
-    - Multipart / FormData (multipart/form-data)
-    - URL encoded form (application/x-www-form-urlencoded)
+    - JSON (`application/json`)
+    - Multipart / FormData (`multipart/form-data`)
+    - URL encoded form (`application/x-www-form-urlencoded`)
 - 将 HTML Form 转换成 JSON 进行请求
 - 自动转换JSON数据
 - 获取浏览器和 node.js 的请求进度，并提供额外的信息（速度、剩余时间）
