@@ -35,11 +35,11 @@ export default defineConfig({
             link: '/views/axios/intro'
           },
           {
-            text: 'Axios文档(中文)',
+            text: '官方文档(中文)',
             link: 'https://axios-http.com/zh/'
           },
           {
-            text: 'Axios文档(英文)',
+            text: '官方文档(英文)',
             link: 'https://axios-http.com/'
           }
         ]
