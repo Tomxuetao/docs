@@ -27,8 +27,22 @@ export default defineConfig({
         link: '/views/gis'
       },
       {
-        text: '请求工具',
-        link: '/views/axios'
+        text: 'Axios',
+        activeMatch: `^/views/axios/`,
+        items: [
+          {
+            text: 'Axios文档',
+            link: '/views/axios/intro'
+          },
+          {
+            text: 'Axios文档(中文)',
+            link: 'https://axios-http.com/zh/'
+          },
+          {
+            text: 'Axios文档(英文)',
+            link: 'https://axios-http.com/'
+          }
+        ]
       },
       {
         text: 'K8s搭建',
@@ -51,9 +65,82 @@ export default defineConfig({
           text: 'Kubeadm',
           items: [
             { text: 'Kubeadm简介', link: '/views/k8s//index' },
-            { text: '快速上手', link: '/views/k8s//quick-start' }
+            { text: '快速上手', link: '/views/k8s/quick-start' }
           ]
         }
+      ],
+      '/views/axios': [
+        {
+          text: '起步',
+          items: [
+            {
+              text: '介绍',
+              link: '/views/axios/intro'
+            },
+            {
+              text: '用例',
+              link: '/views/axios/example'
+            },
+            {
+              text: 'Post请求',
+              link: '/views/axios/post-example'
+            }
+          ]
+        },
+        {
+          text: 'Axios Api',
+          items: [
+            {
+              text: 'Axios Api',
+              link: '/views/axios/api-intro'
+            },
+            {
+              text: 'Axios 实例',
+              link: '/views/axios/instance'
+            },
+            {
+              text: '请求配置',
+              link: '/views/axios/req-config'
+            },
+            {
+              text: '响应结构',
+              link: '/views/axios/res-schema'
+            },
+            {
+              text: '默认配置',
+              link: '/views/axios/config-defaults'
+            },
+            {
+              text: '拦截器',
+              link: '/views/axios/interceptors'
+            },
+            {
+              text: '错误处理',
+              link: '/views/axios/handling-errors'
+            },
+            {
+              text: '取消请求',
+              link: '/views/axios/cancellation'
+            },
+            {
+              text: '请求体编码',
+              link: '/views/axios/urlencoded'
+            },
+            {
+              text: 'Multipart 实体请求',
+              link: '/views/axios/multipart'
+            }
+          ]
+        },
+        {
+          text: '其他',
+          items: [
+            {
+              text: '注意事项',
+              link: '/views/axios/notes'
+            }
+          ]
+        },
       ]
     },
 
