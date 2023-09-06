@@ -86,7 +86,7 @@ KubeKey 可以一同安装 Kubernetes 和 KubeSphere。根据要安装的 Kubern
 从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或者直接运行以下命令。
 
 ```shell
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfLv https://get-kk.kubesphere.io | VERSION=v3.0.9 sh -
 ```
 ::: tip 提示
 通过以上的命令，可以下载 KubeKey 的最新版本。您可以更改命令中的版本号来下载特定的版本。
@@ -102,7 +102,7 @@ export KKZONE=cn
 
 运行以下命令来下载 KubeKey：
 ```shell
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfLv https://get-kk.kubesphere.io | VERSION=v3.0.9 sh -
 ```
 
 ::: tip 提示
@@ -123,7 +123,7 @@ chmod +x kk
 命令如下：
 
 ```shell
-./kk create config [--with-kubernetes version] [--with-kubesphere version] [(-f | --file) path]
+./kk create config --with-kubernetes v1.26.5 --with-kubesphere v3.4.0 -f kubesphere-v3.4.0.yaml
 ```
 
 ::: tip 提示
@@ -138,7 +138,7 @@ chmod +x kk
 ```shell
 ./kk create config [-f ~/myfolder/abc.yaml]
 ```
-- 您可以指定要安装的 KubeSphere 版本（例如 --with-kubesphere v3.3.2）。
+- 您可以指定要安装的 KubeSphere 版本（例如 --with-kubesphere v3.4.0）。
 ```shell
 ./kk create config --with-kubesphere [version]
 ```

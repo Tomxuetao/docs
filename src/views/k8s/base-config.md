@@ -145,8 +145,26 @@ systemctl status firewalld
 
 ## 禁用 SELinux
 
-[SELinux](https://www.redhat.com/zh/topics/linux/what-is-selinux)
+[`SELinux`](https://www.redhat.com/zh/topics/linux/what-is-selinux) : 安全增强型Linux是一个Linux内核的功能，它提供支持访问控制的安全政策保护机制。
+关闭[`SELinux`](https://www.redhat.com/zh/topics/linux/what-is-selinux)以允许容器访问宿主机的文件系统。
+
+使用sed修改配置文件实现永久关闭SELinux
+
+```shell
+sed -i 's/^SELINUX=enforcing/SELINUX=disabled' /etc/selinux/config
+```
+
+::: tip 提示
+使用getenforce命令，验证SELinux状态，返回状态如果是Enforcing，表明SELinux已开启；
+返回Disabled，表明SELinux已关闭。执行命令setenforce 0临时关闭SELinux。
+:::
 
 ## 安装系统依赖
 
-## 配置基于 SSH 密钥
+在所有节点上，以`root`用户登录系统，执行下面的命令为k8s安装系统基本依赖包
+
+```shell
+yum install curl socat conntrack ebtables ipset ipvsadm -y
+```
+
+## SSH 密钥身份验证
