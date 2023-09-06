@@ -46,7 +46,7 @@ export default defineConfig({
       },
       {
         text: 'K8s搭建',
-        link: '/views/k8s/kubekey',
+        link: '/views/k8s//base-config',
         activeMatch: `^/views/k8s/`,
       }
     ],
