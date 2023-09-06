@@ -4,7 +4,7 @@ outline: deep
 
 # 配置加速器
 
-如果您无法从 dockerhub.io
+如果您无法从 [`DockerHub`](https://hub.docker.com/)
 下载镜像，强烈建议您预先配置仓库的镜像地址（即加速器）以加快下载速度。您可以参考 [Docker 官方文档](https://docs.docker.com/registry/recipes/mirror/#configure-the-docker-daemon)
 ，或执行以下步骤。
 
@@ -36,7 +36,9 @@ sudo vim /etc/docker/daemon.json
 
 ```json
 {
-  "registry-mirrors": ["https://<my-docker-mirror-host>"]
+  "registry-mirrors": [
+    "https://<my-docker-mirror-host>"
+  ]
 }
 ```
 
@@ -51,9 +53,9 @@ sudo vim /etc/docker/daemon.json
 ```yaml
 registry:
 
-  registryMirrors: []
+  registryMirrors: [ ]
 
-  insecureRegistries: []
+  insecureRegistries: [ ]
 
   privateRegistry: ""
 ```
@@ -65,5 +67,6 @@ registry:
 2.在 registryMirrors 处填入仓库的镜像地址并保存文件。有关安装的更多信息，请参见[多节点安装](multi-node.md)。
 
 ::: tip 备注
-[在 Linux 上通过 All-in-One 模式安装 KubeSphere](https://www.kubesphere.io/zh/docs/v3.3/quick-start/all-in-one-on-linux/) 不需要 config-sample.yaml 文件。该模式下请采用第一种方法进行配置。
+[在 Linux 上通过 All-in-One 模式安装 KubeSphere](https://www.kubesphere.io/zh/docs/v3.3/quick-start/all-in-one-on-linux/)
+不需要 config-sample.yaml 文件。该模式下请采用第一种方法进行配置。
 :::
