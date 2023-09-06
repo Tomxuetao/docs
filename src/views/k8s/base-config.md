@@ -168,3 +168,20 @@ yum install curl socat conntrack ebtables ipset ipvsadm -y
 ```
 
 ## SSH 密钥身份验证
+
+[`KubeKey`](https://github.com/kubesphere/kubekey) 支持在自动化部署 [`KubeSphere`](https://www.kubesphere.io/zh/)
+和 [`Kubernetes`](https://kubernetes.io/zh-cn/)
+服务时，利用密码和密钥作为远程服务器的连接验证方式。本文采用密钥的方式配置。因此需要部署用户 `root`
+配置免密 [`SSH`](https://zh.wikipedia.org/wiki/Secure_Shell) 身份认证。
+
+::: tip 注意
+本小节为可选配置项，如果你使用密码的方式作为服务器远程连接认证方式，可以忽略本节内容。
+:::
+
+本文选取 `k8s-master-1` 节点作为部署节点，下面的操作仅需在 `k8s-master-1` 节点操作。以 root
+用户登录系统，然后使用 `ssh-keygen` 命令生成一个新的 `SSH` 密钥对，命令完成后，`SSH` 公钥和私钥将存储在 `/root/.ssh` 目录下。
+
+```shell
+ssh-keygen
+```
+
