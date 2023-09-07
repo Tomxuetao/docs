@@ -258,7 +258,8 @@ hosts:
 
 - 在安装 KubeSphere 之前，您可以使用 hosts 下提供的信息（例如 IP 地址和密码）通过 SSH 的方式测试任务机和其他实例之间的网络连接。
 - 在安装前，请确保端口 6443 没有被其他服务占用，否则在安装时会产生冲突（6443 为 API 服务器的默认端口）。
-  :::
+
+:::
 
 #### roleGroups
 
@@ -283,14 +284,8 @@ KubeSphere 会默认安装 [OpenEBS](https://openebs.io/)
 或者商业存储产品作为持久化存储解决方案。
 
 ::: tip 提示
-
--
-
-您可以编辑配置文件，启用多集群功能。有关更多信息，请参见[多集群管理](https://www.kubesphere.io/zh/docs/v3.3/multicluster-management/)。
--
-您也可以选择要安装的组件。有关更多信息，请参见[启用可插拔组件](https://www.kubesphere.io/zh/docs/v3.3/pluggable-components/)
-。有关完整的 config-sample.yaml
-文件的示例，请参见[此文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+- 您可以编辑配置文件，启用多集群功能。有关更多信息，请参见[多集群管理](https://www.kubesphere.io/zh/docs/v3.3/multicluster-management/)。
+- 您也可以选择要安装的组件。有关更多信息，请参见[启用可插拔组件](https://www.kubesphere.io/zh/docs/v3.3/pluggable-components/)。有关完整的 config-sample.yaml 文件的示例，请参见[此文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
 :::
 
 完成编辑后，请保存文件。
