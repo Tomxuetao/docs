@@ -46,12 +46,19 @@ export default defineConfig({
       },
       {
         text: 'K8s搭建',
-        link: '/views/k8s//base-config',
+        link: '/views/k8s/pssh',
         activeMatch: `^/views/k8s/`,
       }
     ],
     sidebar: {
       '/views/k8s/': [
+        {
+          text: '工具介绍',
+          base: '/views/k8s',
+          items: [
+            { text: 'ParallelSSH', link: '/pssh' }
+          ]
+        },
         {
           text: '操作系统',
           base: '/views/k8s',
