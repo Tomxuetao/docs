@@ -185,3 +185,4 @@ yum install curl socat conntrack ebtables ipset ipvsadm -y
 ssh-keygen
 ```
 
+将生成的id_rsa.pub拷贝到其他节点
