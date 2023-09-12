@@ -11,7 +11,7 @@
     "vitepress": "1.0.0-rc.10"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "license": "MIT"
 }
