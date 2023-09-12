@@ -25,3 +25,4 @@ dist/
 /dist
 .vitepress/cache
 .vitepress/dist
+/node_modules/
