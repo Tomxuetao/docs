@@ -8,7 +8,10 @@ export default defineConfig({
   outDir: 'dist',
   lastUpdated: true,
   title: "Tomxuetao",
-  head: [['link', { rel: 'icon', href: '/docs/favicon.webp' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.webp' }],
+    ['link', { rel: 'icon', href: '/docs/favicon.webp' }]
+  ],
   description: "前端文档|JavaScript|WebGIS|地图|K8s",
   themeConfig: {
     logo: '/favicon.webp',
