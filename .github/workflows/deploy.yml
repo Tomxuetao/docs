@@ -29,7 +29,7 @@ jobs:
       - name: Upload
         uses: actions/upload-pages-artifact@v2
         with:
-          path: docs/.vitepress/dist
+          path: .vitepress/dist
   deploy:
     environment:
       name: github-pages
