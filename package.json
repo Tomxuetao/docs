@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
+    "build:vercel": "vitepress build --base /",
     "preview": "vitepress preview",
     "preinstall": "npx only-allow pnpm"
   },
