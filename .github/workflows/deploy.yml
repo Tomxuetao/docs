@@ -24,9 +24,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: |
-          npm run build # or pnpm build / yarn build / bun run build
-          touch docs/.vitepress/dist/.nojekyll
+        run: pnpm build
 
       - name: Upload
         uses: actions/upload-pages-artifact@v2
