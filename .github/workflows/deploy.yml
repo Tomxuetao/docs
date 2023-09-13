@@ -25,7 +25,7 @@ jobs:
 
       - name: Build
         run: |
-          npm run docs # or pnpm build / yarn build / bun run build
+          npm run build # or pnpm build / yarn build / bun run build
           touch docs/.vitepress/dist/.nojekyll
 
       - name: Upload
