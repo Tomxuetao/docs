@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/',
   lang: 'zh-CN',
   cleanUrls: true,
   srcDir: './src',
