@@ -18,23 +18,23 @@ export default defineConfig({
     nav: [
       {
         text: '前端基础',
-        link: '/views/front'
+        link: '/front'
       },
       {
         text: 'Vue相关',
-        link: '/views/vue'
+        link: '/vue'
       },
       {
         text: 'WebGIS',
-        link: '/views/gis'
+        link: '/gis'
       },
       {
         text: 'Axios',
-        activeMatch: `^/views/axios/`,
+        activeMatch: `^/axios/`,
         items: [
           {
             text: 'Axios文档',
-            link: '/views/axios/intro'
+            link: '/axios/intro'
           },
           {
             text: '官方文档(中文)',
@@ -48,57 +48,57 @@ export default defineConfig({
       },
       {
         text: 'K8s搭建',
-        link: '/views/k8s/pssh',
-        activeMatch: `^/views/k8s/`,
+        link: '/k8s/pssh',
+        activeMatch: `^/k8s/`,
       }
     ],
     sidebar: {
-      '/views/k8s/': [
+      '/k8s/': [
         {
           text: '工具介绍',
           items: [
-            { text: 'ParallelSSH', link: '/views/k8s/pssh' }
+            { text: 'ParallelSSH', link: '/k8s/pssh' }
           ]
         },
         {
           text: '操作系统',
           items: [
-            { text: '基础配置', link: '/views/k8s/base-config' },
-            { text: '可选配置', link: '/views/k8s/optional-config' }
+            { text: '基础配置', link: '/k8s/base-config' },
+            { text: '可选配置', link: '/k8s/optional-config' }
           ]
         },
         {
           text: 'KubeKey',
           items: [
-            { text: 'KubeKey简介', link: '/views/k8s/kubekey' },
-            { text: '多节点安装', link: '/views/k8s/multi-node' },
-            { text: '配置加速器', link: '/views/k8s/booster' },
+            { text: 'KubeKey简介', link: '/k8s/kubekey' },
+            { text: '多节点安装', link: '/k8s/multi-node' },
+            { text: '配置加速器', link: '/k8s/booster' },
             { text: 'K8s集群配置', link: '/cluster-config' },
           ]
         },
         {
           text: 'Kubeadm',
           items: [
-            { text: 'Kubeadm简介', link: '/views/k8s/index' },
-            { text: '快速上手', link: '/views/k8s/quick-start' }
+            { text: 'Kubeadm简介', link: '/k8s/index' },
+            { text: '快速上手', link: '/k8s/quick-start' }
           ]
         }
       ],
-      '/views/axios': [
+      '/axios': [
         {
           text: '起步',
           items: [
             {
               text: '介绍',
-              link: '/views/axios/intro'
+              link: '/axios/intro'
             },
             {
               text: '用例',
-              link: '/views/axios/example'
+              link: '/axios/example'
             },
             {
               text: 'Post请求',
-              link: '/views/axios/post-example'
+              link: '/axios/post-example'
             }
           ]
         },
@@ -107,43 +107,43 @@ export default defineConfig({
           items: [
             {
               text: 'Axios Api',
-              link: '/views/axios/api-intro'
+              link: '/axios/api-intro'
             },
             {
               text: 'Axios 实例',
-              link: '/views/axios/instance'
+              link: '/axios/instance'
             },
             {
               text: '请求配置',
-              link: '/views/axios/req-config'
+              link: '/axios/req-config'
             },
             {
               text: '响应结构',
-              link: '/views/axios/res-schema'
+              link: '/axios/res-schema'
             },
             {
               text: '默认配置',
-              link: '/views/axios/config-defaults'
+              link: '/axios/config-defaults'
             },
             {
               text: '拦截器',
-              link: '/views/axios/interceptors'
+              link: '/axios/interceptors'
             },
             {
               text: '错误处理',
-              link: '/views/axios/handling-errors'
+              link: '/axios/handling-errors'
             },
             {
               text: '取消请求',
-              link: '/views/axios/cancellation'
+              link: '/axios/cancellation'
             },
             {
               text: '请求体编码',
-              link: '/views/axios/urlencoded'
+              link: '/axios/urlencoded'
             },
             {
               text: 'Multipart 实体请求',
-              link: '/views/axios/multipart'
+              link: '/axios/multipart'
             }
           ]
         },
@@ -152,7 +152,7 @@ export default defineConfig({
           items: [
             {
               text: '注意事项',
-              link: '/views/axios/notes'
+              link: '/axios/notes'
             }
           ]
         },
