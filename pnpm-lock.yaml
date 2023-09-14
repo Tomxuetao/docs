@@ -26,6 +26,9 @@ devDependencies:
   nuxt:
     specifier: ^3.6.2
     version: 3.7.2(@types/node@20.6.0)(eslint@8.49.0)(rollup@3.29.1)(typescript@4.9.5)
+  typed.js:
+    specifier: ^2.0.16
+    version: 2.0.16
 
 packages:
 
@@ -8869,6 +8872,10 @@ packages:
   /type-fest@3.13.1:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
+    dev: true
+
+  /typed.js@2.0.16:
+    resolution: {integrity: sha512-IBB52GlJiTUOnomwdVVf7lWgC6gScn8md+26zTHj5oJWA+4pSuclHE76rbGI2hnyO+NT+QXdIUHbfjAY5nEtcw==}
     dev: true
 
   /typesafe-path@0.2.2:
