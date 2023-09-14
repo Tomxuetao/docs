@@ -4,11 +4,12 @@
   "private": true,
   "packageManager": "pnpm@8.7.1",
   "scripts": {
+    "lint": "eslint .",
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "generate": "nuxi generate",
     "preview": "nuxi preview",
-    "lint": "eslint ."
+    "generate": "nuxi generate",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "nuxt": "^3.6.2",
