@@ -6,15 +6,8 @@ export default defineAppConfig({
     socials: {
       github: '/Tomxuetao'
     },
-    github: {
-      dir: '.starters/default/content',
-      branch: 'main',
-      repo: 'docus',
-      owner: 'nuxt-themes',
-      edit: true
-    },
     aside: {
-      level: 0,
+      level: 1,
       collapsed: false,
       exclude: []
     },
