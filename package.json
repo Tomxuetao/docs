@@ -12,7 +12,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
-    "nuxt": "^3.6.2",
+    "nuxt": "^3.7.3",
     "eslint": "^8.44.0",
     "typed.js": "^2.0.16",
     "@types/node": "^20.4.0",
