@@ -39,7 +39,7 @@ onMounted(() => {
 .axios-docs {
   display: flex;
   gap: var(--space-8);
-  padding: var(--space-32) 0;
+  padding: var(--space-32) 0 var(--space-24) 0;
 
   .title-wrap {
     flex: 5;
