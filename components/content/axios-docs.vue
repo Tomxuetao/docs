@@ -25,6 +25,7 @@ onMounted(() => {
       <div class="btns-wrap">
         <nuxt-link class="btn-item btn-start" to="/axios/started/intro">Get Started</nuxt-link>
         <a class="btn-item btn-git" href="https://github.com/axios/axios" target="_blank">Github查看</a>
+        <nuxt-link class="btn-item btn-start" to="/axios/analysis">源码分析</nuxt-link>
       </div>
     </div>
     <div class="typed-wrap">
