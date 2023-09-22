@@ -7,11 +7,11 @@ export default defineNuxtConfig({
         domain: 'tomxuetao.eu.org',
       },
       algolia: {
-        applicationId: '0XMIMAT23T',
-        apiKey: '49706735aa647d9c385da14759ce62d9',
+        applicationId: 'G0OAMJLCXR',
+        apiKey: '2b0d27b5529a5494049d7a5d28dc14ff',
         langAttribute: 'lang',
         docSearch: {
-          indexName: 'tomxuetao'
+          indexName: 'tomxuetao-eu'
         }
       }
     }
