@@ -9,7 +9,8 @@
     "build": "nuxi build",
     "preview": "nuxi preview",
     "generate": "nuxi generate",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "zhlint": "zhlint 'content/**/**/*.md'"
   },
   "devDependencies": {
     "@docsearch/js": "^3.5.2",
