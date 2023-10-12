@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
   modules: ['@nuxtjs/plausible', '@nuxt/devtools'],
+
   runtimeConfig: {
     public: {
       plausible: {
@@ -14,6 +15,12 @@ export default defineNuxtConfig({
           indexName: 'tomxuetao-eu'
         }
       }
+    }
+  },
+
+  devtools: {
+    timeline: {
+      enabled: true
     }
   }
 })
