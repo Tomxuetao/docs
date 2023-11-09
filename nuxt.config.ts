@@ -22,5 +22,13 @@ export default defineNuxtConfig({
     timeline: {
       enabled: true
     }
+  },
+
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        verbatimModuleSyntax: false
+      }
+    }
   }
 })
