@@ -13,16 +13,16 @@
     "zhlint": "zhlint 'content/**/**/*.md'"
   },
   "devDependencies": {
-    "@docsearch/js": "^3.5.2",
-    "@docsearch/css": "^3.5.2",
+    "@docsearch/css": "^3.6.0",
+    "@docsearch/js": "^3.6.0",
     "@nuxt-themes/docus": "^1.15.0",
-    "@nuxt/content": "^2.9.0",
-    "@nuxt/devtools": "^1.0.0",
+    "@nuxt/content": "^2.12.1",
+    "@nuxt/devtools": "^1.0.8",
     "@nuxt/eslint-config": "^0.2.0",
-    "@nuxtjs/plausible": "^0.2.3",
-    "@types/node": "^20.9.0",
-    "eslint": "^8.53.0",
-    "nuxt": "^3.8.1",
+    "@nuxtjs/plausible": "^0.2.4",
+    "@types/node": "^20.11.29",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.11.1",
     "typed.js": "^2.1.0"
   }
 }
